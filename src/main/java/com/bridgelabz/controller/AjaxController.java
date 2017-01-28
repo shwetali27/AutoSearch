@@ -86,7 +86,7 @@ public class AjaxController {
 		System.out.println("empName" + empName);
 		// iterate a list and filter by tagName
 		for (Employee emp : data) {
-			if (emp.getEmpName().contains(empName)) {
+			if (emp.getEmpName().toLowerCase().contains(empName.toLowerCase())) {
 				System.out.println("**");
 				result.add(emp.empName);
 			}
